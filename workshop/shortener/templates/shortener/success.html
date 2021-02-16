@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success!</title>
+</head>
+<body>
+{% if urls %}
+    WooHoo! You shortened URL <a href="{{ urls.initial_url }}">{{ urls.initial_url }}</a> to
+<a href="{{ urls.shortened }}">{{ urls.shortened }}</a> !
+<br>
+Feel free to share it with your friends
+{% endif %}
+</body>
+</html>

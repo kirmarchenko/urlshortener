@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My URL shortener</title>
+</head>
+<body>
+{% if error %}
+Short name {{ error.name }} already taken. Please choose another one.
+{% endif %}
+<form action="/" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
