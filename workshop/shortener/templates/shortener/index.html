@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My URL shortener</title>
+    <title>Сокращалка</title>
 </head>
 <body>
 {% if error %}
-Short name {{ error.name }} already taken. Please choose another one.
+Короткое имя {{ error.name }} уже занято. Выберите другое.
 {% endif %}
 <form action="/" method="POST">
     {% csrf_token %}
